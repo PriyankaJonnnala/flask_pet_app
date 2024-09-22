@@ -1,4 +1,4 @@
-rom flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template, redirect, url_for
 from models import db, Pet
 from forms import PetForm
 app = Flask(__name__)
