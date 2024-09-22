@@ -13,7 +13,7 @@ if form.validate_on_submit():
    db.session.add(pet)
    db.session.commit()
    return redirect(url_for('index'))
- pets = Pet.query.all()
- return render_template('view_pets.html', form=form, pets=pets)
+pets = Pet.query.all()
+return render_template('view_pets.html', form=form, pets=pets)
 if __name__ == '__main__':
 app.run(debug=True)
